@@ -3,16 +3,16 @@ import json
 import requests
 
 from discord.ext import commands
-api_key="4cdbd2001df9931c5dcc30ab2b574f3b"
+api_key="Insert your key here"
 
 base_url="https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&"
 
 print(base_url)
 
-class Weather(commands.cog):
+class weather(commands.cog):
 	def __init__(self,bot):
 		self.bot=bot
-	@client.command()
+	@bot.command()
 	async def weather(self,ctx,*,city: str):
 		city_name=city
 		complete_url=base_url+"appid="+api_key+"&q="+city_name

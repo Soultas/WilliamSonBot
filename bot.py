@@ -8,17 +8,9 @@ import sys
 import requests
 from discord.ext import commands
 
-bot = commands.Bot(command_prefix='Dr ')
-
-class myClient(discord.Client):
-	async def on_ready(self):
-		print('Logged on as {0}!'.format(self.user))
-	async def on_message(self, message):
-		print('message from {0.author}: {0.content}'.format(message))
-async def on_ready(self):
-	print('Logged on as {0}!'.format(self.user))
-async def on_message(self, message):
-	print('message from {0.author}: {0.content}'.format(message))
+#TODO LIST:
+#make stickbug cog with random things
+#make movie module that will return list of random movies
 
 Init_time = time.time()
 
@@ -60,7 +52,7 @@ async def disable(ctx,extension: str):
 	else:
 		await ctx.send("extension isn't available")
 
-@bot.command
+@bot.command()
 async def enable(ctx,extension: str):
 	extension = "commands.{}".format(extension)
 	if extension in extension:
@@ -81,4 +73,4 @@ async def on_ready():
 
 
 
-bot.run('NzMwNTkxODQ0OTMyNzgwMDgy.XwZurQ.qEnwWUjwaUiIyqaRhaxhp_bSODw')
+bot.run('Insert Bot Key')
