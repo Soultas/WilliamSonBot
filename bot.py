@@ -15,7 +15,7 @@ startup_extensions = ['cogs.weather']
 
 
 Init_time = time.time()
-api_key="4cdbd2001df9931c5dcc30ab2b574f3b"
+api_key="Your api key here"
 
 base_url="https://api.openweathermap.org/data/2.5/weather?"
 bot = commands.AutoShardedBot(command_prefix='Dr ', description="Dr Botman")
@@ -86,4 +86,4 @@ async def on_ready():
 	for extension in startup_extensions:
 		bot.load_extension(extension)
 
-bot.run('NzMwNTkxODQ0OTMyNzgwMDgy.XwZurQ.wjg0hwa0Si93G1wWsQX8k2NvMtc',bot=True,reconnect=True)
+bot.run('Your api key here',bot=True,reconnect=True)
