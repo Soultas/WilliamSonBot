@@ -4,7 +4,7 @@ import requests
 
 from discord.ext import commands
 
-api_key="4cdbd2001df9931c5dcc30ab2b574f3b"
+api_key="Your key here"
 
 base_url="https://api.openweathermap.org/data/2.5/onecall?lat=33.441792&lon=-94.037689&exclude=hourly,daily&"
 
